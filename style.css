@@ -17,7 +17,6 @@ body {
   margin-top: 30vh;
   margin-bottom: 30vh;
   padding: 50px;
-  padding-right: 70px;
   padding-top: 120px;
   border-radius: 20px;
   position: relative;
@@ -60,7 +59,7 @@ h2:hover {
 }
 hr {
   color: hsl(240, 5%, 91%);
-  width: 100%;
+  width: 280px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -76,7 +75,7 @@ p + img {
   display: inline-block;
   position: absolute;
   top: 15px;
-  left: 24em;
+  left: 260px;
 }
 .arrow {
   top: 7px;
@@ -88,4 +87,31 @@ p + img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 376px) and (max-width: 453px) {
+  hr {
+    width: 310px;
+  }
+  p + img {
+    left: 300px;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30vh;
+    padding-top: 50px;
+  }
+  .figure {
+    position: absolute;
+    left: -100px;
+  }
+  .fqa {
+    position: absolute;
+    left: 200px;
+  }
 }
